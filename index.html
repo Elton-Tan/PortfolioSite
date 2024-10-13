@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elton - Fintech </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/output-onlinegiftools.gif" alt="Background Image" class="background-image">
+              <div class="navbar">
+                <div class = "email" style="color:white">
+                    <a href="mailto:eltontan0709@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
+                </div>
+                <div class="menu">
+                    <i class="fas fa-bars" id="menu-icon"></i> <!-- Hamburger icon -->
+                </div>
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Portfolio</a>
+              
+            </div>
+       
+            <div class="content">
+                <div class="left-side">
+                    <h2>Hi, <br> I am <span>Elton</span></h2>
+                    <h3>Fintech Undergraduate</h3>
+                    <a href="projects.html" class="hire-me-button">
+                        <span class="button-text" style="font-weight: 1;">View Projects</span>
+                        <span class="arrow-box">
+                            <span class="arrow-right">&#8594;</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="right-side">
+                    <p class="expert-on">Fintech Enthusiast</p>
+                    <p class="details">Based in Singapore.<br> I'm a developer & am proficient in Fintech</p>
+                    <p class="description">Hey! Are you looking for a Data Analyst, Software Developer or Fintech Specialist?  
+                    Let's shake hands with me!
+                    </p>
+                    <a href="#" class="download-cv">Download CV<i class="fas fa-download"></i>
+                        <hr id="download-line">
+                    </a>
+                    
+                </div>
+            </div>
+               
+            <footer>
+                <div class="social-links">
+                    <a href="https://github.com/Elton-Tan"><i class="fab fa-github"></i></a> <!-- Replace Twitter with GitHub -->
+                    <a href="http://linkedin.com/in/elton-tan-675a63243"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="chat-bubble">
+                    <a href="https://wa.me/6587272838?text=Hello%20I%20would%20like%20to%20chat" target="_blank">
+                        <span>Let's Chat</span>
+                        <i class="fas fa-comment"></i>
+               
+                    </a>
+                </div>
+
+             
+  
+            </footer>
+            
+        </div>
+        
+    </header>
+ 
+</body>
+<script>
+
+    // JavaScript to toggle the dropdown menu
+    document.getElementById('menu-icon').addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevents the event from bubbling to window.onclick
+        var dropdown = document.getElementById('myDropdown');
+        dropdown.classList.toggle('show');
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        var dropdown = document.getElementById('myDropdown');
+        if (!event.target.matches('#menu-icon') && !dropdown.contains(event.target)) {
+            dropdown.classList.remove('show');
+        }
+    }
+</script>
+
+</html>
